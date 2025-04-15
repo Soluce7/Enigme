@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value.toLowerCase().trim();
+            const correctAnswer = "abondance"; // Change this for each riddle
+            
+            if (answer === correctAnswer) {
+                window.location.href = "riddle2.html"; // Move to next riddle
+            } else {
+                alert("Mauvaise réponse, réessayez!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Rendez-vous dans la demeure aux 5 tours</h1>
+    <p>Là-bas, trouvez de salle de la ligne du temps et complétez cette phrase<br>
+      "Pour que "..." aient la vie, la vie en abondance"<br>
+     </p>
+  
+ <button onclick="window.location.href='pont.html'">Retour</button>    
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <button onclick="checkAnswer()">Submit</button>
+</body>
+</html>

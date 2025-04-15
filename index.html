@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value.toLowerCase().trim();
+            const correctAnswer = "tournai"; // Change this for each riddle
+            
+            if (answer === correctAnswer) {
+                window.location.href = "riddle2.html"; // Move to next riddle
+            } else {
+                alert("Mauvaise réponse, réessayez!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Riddle 1</h1>
+    <p>Bienvenue, chers aventuriers!<br>
+       Votre première tâche consiste à vous rendre au lieu du jeu!<br>
+        Voici votre premier indice:<br>
+        <strong>50°36.30' N, 3°23.38' E</strong><br>
+      Alors dites-moi, où allons-nous?<br>
+    (Un seul mot)</p>
+
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <button onclick="checkAnswer()">Submit</button>
+</body>
+</html>

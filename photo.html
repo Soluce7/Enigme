@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluce race</title>
+      <link rel="stylesheet" href="style.css">
+     <script>
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value.toLowerCase().trim();
+            const correctAnswer = "1804"; // Change this for each riddle
+            
+            if (answer === correctAnswer) {
+                window.location.href = "enigme.html"; // Move to next riddle
+            } else {
+                alert("Mauvaise réponse, réessayez!");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <p>Piètre artiste, j'ai voulu lui dresser un portrait, mais j'ai oublié de prendre la ville dans l'objectif</p>
+    <p>Retournez à l'endroit du quel cette photo a été prise, et élargissez l'objectif!</p>
+    <p>Envoyez la moi par WhatsApp et je vous donnerai le code!</p>
+
+    <input type="text" id="answer" placeholder="1234">
+    <button onclick="checkAnswer()">Submit</button>
+
+    <img src="ce721bd3-ddbb-49d3-8e20-7578e0669b00.jpeg" alt="Clue Image" style="max-width: 100%; height: auto;">
+
+</body>
+</html>
